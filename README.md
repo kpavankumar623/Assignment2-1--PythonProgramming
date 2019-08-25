@@ -27,7 +27,8 @@ output : c = [[11,22,33], [44,55,66], [77,88,99]]
 
 9.Write a program to count the number of occurances of a number from list and store the number and its count in a dict. nums = [10,10,20,10,30,20] Expected output : num_count = {10:3,20:1,30:1}
 
-10.Given a dictionary that contains mapping of employee and his manager { "A", "C" }, { "B", "C" }, { "C", "F" }, { "D", "E" }, { "E", "F" }, { "F", "F" } create a list of managers and directly reporting eployees to that manager Expected output : { "C" : ["A", "B"], "E" : ["D"], "F" : ["C", "E", "F"] } Write a Python program to combine two dictionary adding values for common keys. d1 = {'a': 100, 'b': 200, 'c':300} d2 = {'a': 300, 'b': 200, 'e':400} Expected output: d3 = {'a': 400, 'b': 400, 'c': 300, 'e': 400}
+10.Given a dictionary that contains mapping of employee and his manager { "A", "C" }, { "B", "C" }, { "C", "F" }, { "D", "E" }, { "E", "F" }, { "F", "F" } create a list of managers and directly reporting eployees to that manager Expected output : { "C" : ["A", "B"], "E" : ["D"], "F" : ["C", "E", "F"] } 
+10.2. Write a Python program to combine two dictionary adding values for common keys. d1 = {'a': 100, 'b': 200, 'c':300} d2 = {'a': 300, 'b': 200, 'e':400} Expected output: d3 = {'a': 400, 'b': 400, 'c': 300, 'e': 400}
 
 11.Write a function to convert a given integer (in seconds) to hours, minutes and seconds and return the answer in H:M:S using positional arg passing technique.
 
@@ -36,4 +37,63 @@ output : c = [[11,22,33], [44,55,66], [77,88,99]]
 Input : {"A":2500,"B":1000,"C":500,"D":450} Items bought : A, Quantity : 2 Items bought : B, Quantity : 3 Items bought : D, Quantity : 1
 
 Tax = 18%
+13.Write a function to add all key value pairs to a dict from nested dictionary.
 
+Eg: {
+
+“username”: “ABC”
+
+“channel” : {
+
+     Id : 101
+
+    “name”: ”XYZ”
+
+}
+
+}
+
+Expected output: { “username” : “ABC”, ’ Id’ : 101, “name”: ”XYZ”}
+
+14.Write a program to input electricity unit charge and calculate the total electricity bill according to the given conditions:
+
+For the first 50 units Rs. 0.50/unit
+For the next 100 units Rs. 0.75/unit
+For the next 100 units Rs. 1.20/unit
+For unit above 250 Rs. 1.50/unit
+Also, an additional surcharge of 20% should be added to the bill.
+
+15.Given 2 numbers, a for the purchase amount in rupees, and b for the quality of service(1-5) received, Calculate the tip according to the following table
+
+Quality Tip Percent
+1 5%
+2 10%
+3 15%
+4 20%
+5 25%
+
+16.Given 3 strings: first, second, and third. Third String is said to be a shuffle of first and second if it can be formed by interleaving the characters of first and second String in a way that maintains the left to right ordering of the characters from each string.
+
+For example, given first = "abc" and second = "def", third = "dabecf" is a valid shuffle since it preserves the character ordering of the two strings. Given these 3 strings write a program that detects whether the third String is a valid shuffle of first and second String.
+
+17.Write a program to count the number of occurrences of a word in below sentenses. 
+
+Input : "Python has traditionally checked the up-to-dateness of bytecode cache files by comparing the source metadata with source metadata saved in the cache file header when it was generated. While effective, this invalidation method has its drawbacks. When filesystem timestamps are too coarse, Python can miss source updates, leading to user confusion. Additionally, having a timestamp in the cache file is problematic for build reproducibility and content-based build systems."
+
+Output : {"Python":2,"metadata":2,... }
+
+18.Given a dictionary called clubs where each key is the name of a club (a string), and each value is the set of id strings for the students in the club. Write a segment of Python code that creates a set of all student ids that are in all the clubs in the dictionary
+
+19.Write a program to merge two txt files to third txt file
+
+20.Write a program to remove empty lines from a txt file
+
+21.Write a program to combine each line from first file with the corresponding line in second file into the third file
+
+22.Write a program to check if given string is valid support ticket number or not. Valid Format :
+
+Starting 3 characters should be INC Followed by 5 char which is combination of uppercase alphabates and numbers Input : INC12A34 => Valid Support Ticket Number INC12345 => Invalid Support Ticket Number INC12#56 => Invalid Support Ticket Number
+
+23.Write a program to check if given password is valid password or not. Valid Password : 1.Min length should be 6 and max length should be 12 2.Password should contain atleast one Upper case letter 3.Password should contain atleast 1 special character (@,!,_,$,#) 4.Password should contain atleast 1 number
+
+24.Check if given phone number is valid international phone number as per E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number] and can have a maximum of fifteen digits.
